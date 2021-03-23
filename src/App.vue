@@ -12,214 +12,136 @@
 
 <script>
 // import TheNav from "./layouts/TheNav.vue";
-import TheHeader from "./layouts/TheHeader.vue";
-import TheFooter from "./layouts/TheFooter.vue";
+import TheHeader from './layouts/TheHeader.vue'
+import TheFooter from './layouts/TheFooter.vue'
 export default {
   components: {
-    // TheNav,
     TheHeader,
     TheFooter
   },
-  // data() {
-  //   return {
-  //     gky:{
-  //       name:"GKY",
-  //       avatarurl:require("./assets/KeyangGou.jpg"),
-  //       title:"hanpi",
-  //       about:"tell somrthing about gky",
-  //       links:[
-  //         {img: require("./assets/github.png"), url:"https://github.com/KeyangYu"},
-  //         {img: require("./assets/linkedin.png"), url:"https://linkedin.com"}
-  //       ]
-  //     },
-  //     cards: [
-  //       {
-  //         label: "Education",
-  //         items: [
-  //           {
-  //             title: "MS",
-  //             subtitle: "FIU",
-  //             content: "this is content",
-  //             link: {
-  //               url: "",
-  //               title: "",
-  //             },
-  //           },
-
-  //           {
-  //             title: "BS",
-  //             subtitle: "DD",
-  //             content: "this is content",
-  //             link: {
-  //               url: "google.com",
-  //               title: "This is google",
-  //             },
-  //           },
-  //         ],
-  //       },
-  //       {
-  //         label: "Publications",
-  //         items: [
-  //           {
-  //             title: "MS",
-  //             subtitle: "FIU",
-  //             content: "this is content",
-  //             link: {
-  //               url: "",
-  //               title: "",
-  //             },
-  //           },
-
-  //           {
-  //             title: "BS",
-  //             subtitle: "DD",
-  //             content: "this is content",
-  //             link: {
-  //               url: "google.com",
-  //               title: "This is google",
-  //             },
-  //           },
-  //         ],
-  //       },
-  //       {
-  //         label: "Links",
-  //         items: [
-  //           {
-  //             title: "",
-  //             subtitle: "",
-  //             content: "",
-  //             link: {
-  //               url: "",
-  //               title: "Link1",
-  //             },
-  //           },
-
-  //           {
-  //             title: "",
-  //             subtitle: "",
-  //             content: "",
-  //             link: {
-  //               url: "",
-  //               title: "This is google",
-  //             },
-  //           },
-  //         ],
-  //       },
-  //     ],
-  //   };
-  // },
-  data() {
+  data () {
     return {
       gky: {
-        name: "Keyang Yu",
-        avatarurl: require("./assets/gky.jpg"),
-        title: "Ph.D. Student in Computer Science",
+        name: 'Keyang Yu',
+        avatarurl: require('./assets/gky.jpg'),
+        title: 'Ph.D. Student in Computer Science',
         about: `I'm a second year Ph.D. Student at 
         <a href="http://users.cis.fiu.edu/~dochen/index.html">Dr. Dong Chen's</a> 
         <a href="https://cps.cis.fiu.edu/">Cyber-Physical Laboratory</a>, 
         Florida International University. My research area is data privacy and security related to Cyber-Physical Systems. Currently my projects are working on IoT network traffic and smart home user activity analyzing and privacy preserving.`,
         links: [
-          { img: require("./assets/email.png"), url: "kyu009@fiu.edu" },
+          { img: require('./assets/email.png'), url: 'kyu009@fiu.edu' },
           {
-            img: require("./assets/github.png"),
-            url: "https://github.com/KeyangYu",
+            img: require('./assets/github.png'),
+            url: 'https://github.com/KeyangYu'
           },
           {
-            img: require("./assets/linkedin.png"),
-            url: "https://www.linkedin.com/in/keyang-yu-438a12178/",
-          },
-        ],
+            img: require('./assets/linkedin.png'),
+            url: 'https://www.linkedin.com/in/keyang-yu-438a12178/'
+          }
+        ]
       },
       cards: [
         {
-          label: "Education",
+          label: 'Education',
           items: [
             {
-              title: "(In Progress) Ph.D., Computer Science",
-              subtitle: "Florida International University",
-              content: "2018 — Present",
+              title: '(In Progress) Ph.D., Computer Science',
+              subtitle: 'Florida International University',
+              content: '2018 — Present',
               link: {
-                url: "",
-                title: "",
-              },
+                url: '',
+                title: ''
+              }
             },
 
             {
-              title: "Bachelor of Engineering, Information Technology",
-              subtitle: "Southeast University (China)",
-              content: "2017",
+              title: 'Bachelor of Engineering, Information Technology',
+              subtitle: 'Southeast University (China)',
+              content: '2017',
               link: {
-                url: "",
-                title: "",
-              },
-            },
-          ],
+                url: '',
+                title: ''
+              }
+            }
+          ]
         },
         {
-          label: "Publications",
+          label: 'Publications',
           items: [
             {
               title:
-                "[BigDataCPS’20] SmartAttack: Open-source Attack Models for Enabling Security Research in Smart Homes.",
-              subtitle: "Keyang Yu, Dong Chen",
+                "[IPSN'21] PrivacyGuard: Enhancing Smart Home User Privacy",
+              subtitle: 'Keyang Yu, Qi Li, Dong Chen, Mohammad Ashiqur Rahman, Shiqiang Wang',
               content:
-                "In Proceedings of the 2nd IEEE International Workshop on Big Data Analytics of Cyber-Physical Systems (BigDataCPS’20), Oct 19, 2020, co-located with IGSC’20.",
+                "In Proceedings of the 20th ACM/IEEE International Conference on Information Processing in Sensor Networks, IPSN'21, May 18-21, 2021, Nashville, Tennessee, USA, Acceptance Rate = 24.76%.",
               link: {
-                url: "http://ocelot.aul.fiu.edu/~kyu009/SmartAttack.pdf",
-                title: "Paper",
-              },
+                // url: 'http://ocelot.aul.fiu.edu/~kyu009/SmartAttack.pdf',
+                // title: 'Paper'
+              }
+            },
+            {
+              title:
+                '[BigDataCPS’20] SmartAttack: Open-source Attack Models for Enabling Security Research in Smart Homes.',
+              subtitle: 'Keyang Yu, Dong Chen',
+              content:
+                'In Proceedings of the 2nd IEEE International Workshop on Big Data Analytics of Cyber-Physical Systems (BigDataCPS’20), Oct 19, 2020, co-located with IGSC’20.',
+              link: {
+                url: 'http://ocelot.aul.fiu.edu/~kyu009/SmartAttack.pdf',
+                title: 'Paper'
+              }
             },
 
             {
               title:
-                "[IGSC’20] SolarDiagnostics: Automatic Rooftop Solar Photovoltaic Array Damage Detection.",
-              subtitle: "Qi Li, Keyang Yu, Dong Chen",
+                '[IGSC’20] SolarDiagnostics: Automatic Rooftop Solar Photovoltaic Array Damage Detection.',
+              subtitle: 'Qi Li, Keyang Yu, Dong Chen',
               content:
-                "In Proceedings of the Eleventh IEEE International Green and Sustainable Computing Conference, IGSC’20, Oct 19-22, Acceptance Rate = 23%.",
+                'In Proceedings of the Eleventh IEEE International Green and Sustainable Computing Conference, IGSC’20, Oct 19-22, Acceptance Rate = 23%.',
               link: {
-                url: "http://ocelot.aul.fiu.edu/~kyu009/SolarDiagnostics.pdf",
-                title: "Paper",
-              },
-            },
-          ],
+                url: 'http://ocelot.aul.fiu.edu/~kyu009/SolarDiagnostics.pdf',
+                title: 'Paper'
+              }
+            }
+          ]
         },
         {
-          label: "Links",
+          label: 'Links',
           items: [
             {
-              title: "",
-              subtitle: "",
-              content: "",
+              title: '',
+              subtitle: '',
+              content: '',
               link: {
-                url: "https://www.youtube.com/channel/UCWeM_0s_km6ebefXrio6UGQ",
-                title: "CPS Lab Youtube Channel",
-              },
+                url: 'https://www.youtube.com/channel/UCWeM_0s_km6ebefXrio6UGQ',
+                title: 'CPS Lab Youtube Channel'
+              }
             },
 
             {
-              title: "",
-              subtitle: "",
-              content: "",
+              title: '',
+              subtitle: '',
+              content: '',
               link: {
-                url: "https://cps.cis.fiu.edu/",
-                title: "Cyber-Physical Systems Laboratory (CPSLab)",
-              },
+                url: 'https://cps.cis.fiu.edu/',
+                title: 'Cyber-Physical Systems Laboratory (CPSLab)'
+              }
             },
             {
-              title: "",
-              subtitle: "",
-              content: "",
+              title: '',
+              subtitle: '',
+              content: '',
               link: {
-                url: "https://www.cis.fiu.edu/",
-                title: "FIU SCIS",
-              },
-            },
-          ],
-        },
-      ],
-    };
-  },
-};
+                url: 'https://www.cis.fiu.edu/',
+                title: 'FIU SCIS'
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
 </script>
 
 <style>
