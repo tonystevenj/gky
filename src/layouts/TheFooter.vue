@@ -1,5 +1,5 @@
 <template>
-    <div>Keyang Yu @2020</div>
+    <div>Keyang Yu ©2021</div>
 </template>
 
 <style  scoped>
@@ -11,6 +11,4 @@ div{
     background-color: gray;
     color:white;
 }
-
-
 </style>
